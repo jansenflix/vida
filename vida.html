@@ -1,0 +1,224 @@
+
+<html>
+    <HEAD>
+    
+<style>img[alt="www.000webhost.com"]{display:none;}</style>
+    <title>jf</title>
+        <link rel="shortcut icon" href="https://tinyurl.com/yx5zvq2b" />
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="https://vidmoly.to/static/embed8cdn.css">
+    src=""></script>
+    
+   
+      
+      <script language="JavaScript" type="text/javascript" src=""></script>
+     
+      <script type='text/javascript' src='https://vidmoly.to/player_clappr/frd0ad.js'></script>
+    <script>
+    
+    
+    </script>
+    <style>
+        body {
+          background: black;
+          height: 100%;
+        }
+        #vplayer {
+          height: auto !important;
+          width: 100% !important;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto !important;
+          position: fixed !important;
+        }
+      </style>
+     
+    
+      
+    </HEAD>
+    
+          
+           <div id="voc_dsd"></div>
+   
+            
+    <div id="vs_ts">
+    </div>
+    
+    
+    <script type="text/javascript" src="https://vidmoly.to/static/level-selector18t.mincdn.js"></script>
+    
+    <BODY topmargin=0 leftmargin=0 style="background:transparent;">
+    
+    
+        <div >
+        
+        <style>
+        .jwplayer.jw-skin-alaska.jw-state-idle .jw-controls {
+      background-image: url(/imgc.php?r=);
+      background-size: cover;
+      background-size: 100% 100%
+    }
+      </style>
+      <div id="lo_dlsm"></div>
+
+          
+    
+            
+            
+        
+     
+    
+    
+             <script type="text/javascript" src="https://vidmoly.to/static/thumbnails-pluginmcdn.js"></script>
+<script type="text/javascript">
+        var spriteSheetUrl = "";
+        var numThumbs = 225;
+        var thumbWidth = 162;
+        var thumbHeight = 90;
+        var numColumns = 15;
+        var timeInterval = 26.4266666666667;
+    
+        var thumbs = ClapprThumbnailsPlugin.buildSpriteConfig(spriteSheetUrl, numThumbs, thumbWidth, thumbHeight, numColumns, timeInterval);
+    </script>
+    
+    
+    <div id='vplayer' style="width:100%px;height:100%px;text-align:center;"></div>
+    <script type='text/javascript'>player.play();player.pause();</script>
+                    
+  </div>
+       
+    
+    
+    
+    
+    <script type='text/javascript'>  function sourceError(url) {
+        try {
+          if(url !== player._options.sources[0]) { return false; }
+    
+          setTimeout(function() {
+            try { player.stop();player.play(); }
+            catch(e) { console.log('something gone wrong with sourceError'); }
+          }, 1);
+    
+        } catch(e) { console.log('something gone wrong with sourceError'); }
+      }
+    var player = new Clappr.Player({
+      
+sources:[ "https://fr3.seedr.cc/media/video/lq_hls/4dd4dfd5fd4a56553bd487a2e9765f8d98955590/vid.m3u8?dvr"],
+      
+      
+       
+    
+      preload: '',
+      
+  
+    
+       
+      poster: "", 
+      width: "100%",
+      height: "100%",
+        hlsjsConfig:  {
+          maxBufferLength : 30,
+          maxMaxBufferLength : 90,
+          maxBufferSize : 70*1000*1000,
+          maxBufferHole : 0.01,
+                manifestLoadingMaxRetry: 0,
+          xhrSetup: function(xhr, url) {
+            xhr.onerror = function() { sourceError(url); }
+            xhr.ontimeout = function() { sourceError(url); };
+            xhr.onabort = function() { sourceError(url); };
+    
+            if(xhr.readyState === 0) { sourceError(url); }
+          }
+          
+      },
+      events: {
+        onError: function(e) {
+          // Here the code to handle the error
+          console.log('bigbadaboom !', e);
+        }
+      },
+      disableKeyboardShortcuts: false,
+      disableVideoTagContextMenu: true,
+      //autoPlay: true,
+      parentId: "#vplayer"
+      ,plugins: {"core": [ClapprThumbnailsPlugin,LevelSelector]}
+      ,scrubThumbnails: {
+            backdropHeight: 90,
+            spotlightHeight: 90,
+            thumbs: thumbs
+          },maxBufferLength: 1,levelSelectorConfig: {
+        title: 'Quality',
+        labels: {
+            3: 'Higher',
+            2: '720p',
+            1: '720p',
+            0: '360p',
+        }
+      }
+      
+      });
+    var ab2Started = (4 * 60) + 1;
+    var ab2Interval = null;
+    var vmAdBlocked = (document.getElementById('vidmolyadblocktest')) ? 0 : 1;
+    var abLoad = false;
+    var vvplay,vvad,x2ok=0;
+    player.on(Clappr.Events.PLAYER_TIMEUPDATE, function(x) { 
+        if(5>0 && x.current>=5 && vvad!=1){vvad=1;$('div.video_ad_fadein').fadeIn('slow');}
+        if(x2ok==0 && x.current>=15 && x.current<=(15+2)){x2ok=x.current;}
+    });
+    player.on(Clappr.Events.PLAYER_PLAY, function(x) {
+      doPlay(x);
+      if(window.abLoad === false) {
+        window.abLoad = true;
+        $.post('', {user: '349157', 'hash': '894701-177-87-1587571902-b64188056c68ad678c49f0e60ed8beb7', 'block': vmAdBlocked}, function(data1) {
+          window.ab2Interval = setInterval(function(){
+            ab2Started--;
+            if (ab2Started === 0) {
+              $.post('', {'user': '349157', 'hash': '894701-177-87-1587571902-b64188056c68ad678c49f0e60ed8beb7'}, function(data2) {}, 'json');
+              $.get('/dl?op=view&file_code=8l099uyefowl&hash=894701-177-87-1587571902-b64188056c68ad678c49f0e60ed8beb7&embed=1&adb='+adb, function(data) {$('#fviews').html(data);} );
+              if (window.ab2Interval !=  null) {
+                clearInterval(window.ab2Interval);
+              }
+            }
+          }, 1000);
+        }, 'json');
+      }
+    });
+    player.on(Clappr.Events.PLAYER_PLAY, function() { doPlay(); });
+    player.on(Clappr.Events.PLAYER_ENDED, function() { $('div.video_ad').show();  });
+    function doPlay()
+    {
+      $('div.video_ad').hide();
+      if(vvplay)return;
+      vvplay=1;
+      adb=0;
+    
+        if( window.cRAds === undefined ){ adb=1; }
+      
+    
+      window.setTimeout( function (){ 
+        if(x2ok!=0 && player.isPlaying()==true)
+        { 
+          
+          $.get( ''+x2ok, function(data){  } ); 
+        } 
+          }, 7*10);
+    
+    }
+    
+    </script>
+    
+    
+    
+    
+    <script type="text/javascript" src=""></script>
+    
+    
+    
+    
+    </BODY>
+</html>
